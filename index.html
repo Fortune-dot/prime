@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drink prime</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href=""><img src="./images/prime-logo.png" alt="" height="30px"   class="ksi"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">New flavors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just a Drink <br>It's <span class="span">PRIME</span> </h2>
+                <p>A fantastic hydration drink that can fuel any lifestyle.
+               </p>
+               <a href="#" class="span">Order Prime</a>
+            </div>
+            <div class="imgBox">
+                <img src="./images/lime.webp" alt="prime" class="prime">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./images/grape.webp" alt="" height="100px" onclick="imgSlider('./images/grape.webp');changeCircleColor('#63389A');changeSpanColor('#63389A');"></li>
+            <li><img src="./images/rasp.webp" alt="" height="100px" onclick="imgSlider('./images/rasp.webp');changeCircleColor('#18A5D7');changeSpanColor('#18A5D7');"></li>
+            <li><img src="./images/tropical.webp" alt="" height="100px" onclick="imgSlider('./images/tropical.webp');changeCircleColor('#DC2F36');changeSpanColor('#DC2F36');"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="./images/facebook.png" alt="" height="50px"></a></li>
+            <li><a href="#"><img src="./images/twitter.png" alt="" height="50px"></a></li>
+            <li><a href="#"><img src="./images/instagram.png" alt="" height="50px"></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything){
+        document.querySelector('.prime').src = anything;    
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function changeSpanColor(color){
+            const circle = document.querySelector('.span');
+            circle.style.color = color;
+        }
+    </script>
+</body>
+</html>
