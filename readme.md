@@ -1,3 +1,3 @@
 # prime
 prime hydration
-![Screenshot](prime.png)
+![Screenshot](prime.PNG)
